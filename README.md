@@ -7,7 +7,7 @@ This API requires [NodeJS](https://nodejs.org/) v14+ , [MongoDB](https://www.mon
 > Note: Don't forget to manually run your Redis client
 
 #### Setting Up Google API
-Firstly, before using this app, you must configure the OAuth Client ID for using Google API. Go to [Google Developers](https://console.cloud.google.com/apis), and create new project. After you've created a project, on left side bar, create OAuth Consent Screen, just fill all the mandatory fields and leave all optional fields. After that, go to credentials tab and click "CREATE CREDENTIALS" button on top of your screen to create OAuth Client ID. Make sure to add URL of `http://localhost:3000/api/v1/google/check` on Authorised redirect URIs section. Get the Client ID value and Client Secret value to .env file which will be on the next section.
+Firstly, before using this app, you must configure the OAuth Client ID for using Google API. Go to [Google Developers](https://console.cloud.google.com/apis), and create new project. After you've created a project, on left side bar, create OAuth Consent Screen, just fill all the mandatory fields and leave all optional fields, please make sure you click "PUBLISH APP" button after OAuth Consent Screen created. After that, go to credentials tab and click "CREATE CREDENTIALS" button on top of your screen to create OAuth Client ID. Make sure to add URL of `http://localhost:3000/api/v1/google/check` on Authorised redirect URIs section. Get the Client ID value and Client Secret value to .env file which will be on the next section.
 
 ### Running on local machine
 
