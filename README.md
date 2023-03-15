@@ -51,5 +51,8 @@ Run this command if you want to terminate and delete the containers
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml down -v
 ```
 
+## Between 2 Folders Postman Requests
+You'll notice there are 2 folders within Postman Request you've imported. First is Local Activity and second Google Events. When you execute API route of local activity, it'll we only stored in your Mongo Database, while execute API route of Google Events, it will be stored both in Google Calendar and your Mongo Database, 1 thing to note there is 1 additional properties of `eventId` in your document within Mongo Database, which reffering the events in your Google Calendar that have been created using this API. Another thing is you could passing opptional properties of `attendances` within request body to decide which email account you want to invite.
+
 ## Error/Bug Discoveries
 Find some errors or bugs while running the app? You can contribute by telling me what the errors and bugs are, or you could straight up make a pull request on this repository.
