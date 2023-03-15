@@ -377,7 +377,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"activityName\":\"Hang Out\",\r\n    \"date\":\"17-Mar-2023\",\r\n    \"start\": 12,\r\n    \"end\": 15,\r\n    \"attendances\":\"muhammadanbia@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"activityName\":\"Hang Out\",\r\n    \"date\":\"17-Mar-2023\",\r\n    \"start\": 12,\r\n    \"end\": 15,\r\n    \"attendances\":\"muhammadanbia@gmail.com, senggaguanbia@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
