@@ -1,0 +1,31 @@
+version: '3'
+services:
+
+  node-app:
+    build: .
+    environment:
+      TZ: Asia/Jakarta
+      MONGO_PORT: 27017
+      MONGO_IP: mongo
+      MONGO_INITDB_ROOT_USERNAME: username
+      MONGO_INITDB_ROOT_PASSWORD: supersecret
+      MONGO_DATABASE: google-calendar
+      REDIS_URL: redis
+      REDIS_PORT: 6379
+      ACCESS_TOKEN: supersecret
+      COOKIE_SECRET: supersecret
+      CLIENT_ID: xyz
+      CLIENT_SECRET: xyz
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: username
+      MONGO_INITDB_ROOT_PASSWORD: supersecret
+    volumes:
+      - ./db/:/data/db
+
+  redis:
+    image: redis

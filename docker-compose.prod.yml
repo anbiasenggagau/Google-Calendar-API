@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+  node-app:
+    ports:
+      - "3000:3000"
+    build:
+      args:
+        NODE_ENV: production
+    command: node app.js
+
+# docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+# docker-compose -f docker-compose.yml -f docker-compose.prod.yml down -v

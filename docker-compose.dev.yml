@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+  node-app:
+    ports:
+      - "3000:3000"
+    build:
+      args:
+        NODE_ENV: development
+    volumes:
+      - ./:/app/:ro
+    command: npm run dev
+
+# docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build
+# docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v
